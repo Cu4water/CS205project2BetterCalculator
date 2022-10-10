@@ -1,0 +1,2 @@
+# CS205project2BetterCalculator
+一个具有TUI的简单的四则混合计算器，带有变量存储功能和脚本执行功能
