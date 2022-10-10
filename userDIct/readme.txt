@@ -1,0 +1,1 @@
+This folder is for the storage of user data, include variables, const numbers, and functions.
