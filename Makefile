@@ -144,6 +144,36 @@ src/main.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.s
 .PHONY : src/main.s
 
+# target to build an object file
+src/number.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/number.o
+.PHONY : src/number.o
+
+# target to preprocess a source file
+src/number.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/number.i
+.PHONY : src/number.i
+
+# target to generate assembly for a file
+src/number.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/number.s
+.PHONY : src/number.s
+
+# target to build an object file
+src/number_judge.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/number_judge.o
+.PHONY : src/number_judge.o
+
+# target to preprocess a source file
+src/number_judge.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/number_judge.i
+.PHONY : src/number_judge.i
+
+# target to generate assembly for a file
+src/number_judge.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/number_judge.s
+.PHONY : src/number_judge.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -156,6 +186,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/number.o"
+	@echo "... src/number.i"
+	@echo "... src/number.s"
+	@echo "... src/number_judge.o"
+	@echo "... src/number_judge.i"
+	@echo "... src/number_judge.s"
 .PHONY : help
 
 
