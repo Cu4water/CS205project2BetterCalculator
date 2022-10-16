@@ -1,26 +1,27 @@
 #ifndef CSTDIO
-#define CSTDIO
-#include<cstdio>
+	#define CSTDIO
+	#include<cstdio>
 #endif
+
 #ifndef CSTRING
-#define CSTRING
-#include<cstring>	
+	#define CSTRING
+	#include<cstring>	
 #endif
 #ifndef STRING
-#define STRING
-#include<string>
+	#define STRING
+	#include<string>
 #endif
 #ifndef NUMBER
-#define NUMBER
-#include"number.h"
+	#define NUMBER
+	#include"number.h"
 #endif
 #ifndef TRIE
-#define TRIE
-#include"trie.h"
+	#define TRIE
+	#include"trie.h"
 #endif
 #ifndef CALC
-#define CALC
-#include"calc.h"
+	#define CALC
+	#include"calc.h"
 #endif
 
 using std::string;
@@ -138,6 +139,7 @@ void Load(const char *user, Trie &variable) {
 	scanf("%d",&n);
 	for(int i=0;i<n;i++){
 		std::cin>>name>>num;
+		puts("aaaa");
 		variable.insert(name,Number(num,0));
 	}
 	freopen("/dev/tty","r",stdin);

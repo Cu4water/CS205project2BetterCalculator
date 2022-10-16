@@ -57,7 +57,7 @@ int FindLastSymbol(const string opt){
     return tmpans;
 }
 Number Calculate
-(const string opt, const int last_calc_pos,const Trie &variable, bool &runtime_error){
+(const string opt, const int last_calc_pos,const int scale, Trie &variable, bool &runtime_error){
     if(runtime_error){
         return NULL;
     }
@@ -65,10 +65,10 @@ Number Calculate
         
     }
     Number l_part=Calculate(opt.substr(0,last_calc_pos)
-    ,FindLastSymbol(opt.substr(0,last_calc_pos)),variable,runtime_error);
+    ,FindLastSymbol(opt.substr(0,last_calc_pos)),scale,variable,runtime_error);
     Number r_part=Calculate(opt.substr(last_calc_pos+1,opt.length()-last_calc_pos-1)
     ,FindLastSymbol(opt.substr(last_calc_pos+1,opt.length()-last_calc_pos-1)),
-    variable,runtime_error);
+    scale,variable,runtime_error);
     if(runtime_error) return NULL;
     switch(opt[last_calc_pos]){
         case '+':
