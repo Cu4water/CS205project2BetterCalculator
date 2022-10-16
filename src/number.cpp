@@ -1,8 +1,23 @@
+#ifndef IOSTREAM
+#define IOSTREAM
 #include<iostream>
+#endif
+#ifndef SSTREAM
+#define SSTREAM
 #include<sstream>
+#endif
+#ifndef IOMANIP
+#define IOMANIP
 #include<iomanip>
+#endif
+#ifndef CMATH
+#define CMATH
 #include<cmath>
+#endif
+#ifndef NUMBER
+#define NUMBER
 #include"number.h"
+#endif
 
 using std::string;
 using std::vector;
@@ -262,7 +277,7 @@ Number & Number::operator*(const Number &obj){
 	Number round;
 	bool judge=false;
 	int m=size_,n=obj.size_;
-	vector<vector<short>>vec(m,vector<short>(m+n));
+	vector<vector<short> >vec(m,vector<short>(m+n));
 	for(int i=0;i<m;i++){
 		int carry=0;
 		int j;
