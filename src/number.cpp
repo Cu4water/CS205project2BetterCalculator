@@ -25,20 +25,18 @@ using std::stringstream;
 
 vector<string> split(const string &s, const string &delim) {
 	vector<string> elems;
-	size_t pos_ = 0;
-	size_t len = s.length();
-	size_t delim_len = delim.length();
-	if (delim_len == 0) return elems;
-	while (pos_ < len)
-	{
-		int find_pos = s.find(delim, pos_);
-		if (find_pos < 0)
-		{
-			elems.push_back(s.substr(pos_, len - pos_));
+	size_t pos_=0;
+	size_t len=s.length();
+	size_t delim_len=delim.length();
+	if(delim_len==0) return elems;
+	while(pos_<len){
+		int find_pos=s.find(delim, pos_);
+		if(find_pos<0){
+			elems.push_back(s.substr(pos_,len-pos_));
 			break;
 		}
-		elems.push_back(s.substr(pos_, find_pos - pos_));
-		pos_ = find_pos + delim_len;
+		elems.push_back(s.substr(pos_,find_pos-pos_));
+		pos_=find_pos+delim_len;
 	}
 	return elems;
 }
@@ -50,22 +48,22 @@ Number::Number(const int &x) {
 	num_.resize(digit_);
 	ToBig(x);
 }
-Number::Number(const int &x,const int &scale) {
+Number::Number(const int &x,const int scale) {
 	SetScale(scale);
 	num_.resize(digit_);
 	ToBig(x);
 }
-Number::Number(const long long &x,const int &scale) {
+Number::Number(const long long &x,const int scale) {
 	SetScale(scale);
 	num_.resize(digit_);
 	ToBig(x);
 }
-Number::Number(const double &x,const int &scale) {
+Number::Number(const double &x,const int scale) {
 	SetScale(scale);
 	num_.resize(digit_);
 	ToBig(x);
 }
-Number::Number(const string &x,const int &scale) {
+Number::Number(const string x,const int scale) {
 	SetScale(scale);
 	num_.resize(digit_);
 	ToBig(x);
@@ -125,9 +123,6 @@ void Number::ToBig(string x){
 	while(num_[0]==0&&pos_>0) num_.erase(num_.begin()),size_--,pos_--;
 }
 
-string Number::Attribute() {
-	return "("+std::to_string(sign_)+","+std::to_string(size_)+","+std::to_string(pos_)+","+std::to_string(overflow_) + ")";
-}
 void Number::SetScale(const int &scale){
 	if(scale<0){
 		puts("scale<0");

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/college/C++/Proj/CS205project2BetterCalculator
+CMAKE_SOURCE_DIR = /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/college/C++/Proj/CS205project2BetterCalculator
+CMAKE_BINARY_DIR = /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -69,63 +69,79 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
+CMakeFiles/main.dir/src/calc.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/calc.o: src/calc.cpp
+CMakeFiles/main.dir/src/calc.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/calc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/calc.o -MF CMakeFiles/main.dir/src/calc.o.d -o CMakeFiles/main.dir/src/calc.o -c /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/calc.cpp
+
+CMakeFiles/main.dir/src/calc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/calc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/calc.cpp > CMakeFiles/main.dir/src/calc.i
+
+CMakeFiles/main.dir/src/calc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/calc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/calc.cpp -o CMakeFiles/main.dir/src/calc.s
+
 CMakeFiles/main.dir/src/main.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.o: src/main.cpp
 CMakeFiles/main.dir/src/main.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/college/C++/Proj/CS205project2BetterCalculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.o -MF CMakeFiles/main.dir/src/main.o.d -o CMakeFiles/main.dir/src/main.o -c /mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/main.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.o -MF CMakeFiles/main.dir/src/main.o.d -o CMakeFiles/main.dir/src/main.o -c /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/main.cpp
 
 CMakeFiles/main.dir/src/main.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/main.cpp > CMakeFiles/main.dir/src/main.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/main.cpp > CMakeFiles/main.dir/src/main.i
 
 CMakeFiles/main.dir/src/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/main.cpp -o CMakeFiles/main.dir/src/main.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/main.cpp -o CMakeFiles/main.dir/src/main.s
 
 CMakeFiles/main.dir/src/number.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/number.o: src/number.cpp
 CMakeFiles/main.dir/src/number.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/college/C++/Proj/CS205project2BetterCalculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/number.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/number.o -MF CMakeFiles/main.dir/src/number.o.d -o CMakeFiles/main.dir/src/number.o -c /mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/number.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/number.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/number.o -MF CMakeFiles/main.dir/src/number.o.d -o CMakeFiles/main.dir/src/number.o -c /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/number.cpp
 
 CMakeFiles/main.dir/src/number.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/number.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/number.cpp > CMakeFiles/main.dir/src/number.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/number.cpp > CMakeFiles/main.dir/src/number.i
 
 CMakeFiles/main.dir/src/number.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/number.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/number.cpp -o CMakeFiles/main.dir/src/number.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/number.cpp -o CMakeFiles/main.dir/src/number.s
 
-CMakeFiles/main.dir/src/number_judge.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/number_judge.o: src/number_judge.cpp
-CMakeFiles/main.dir/src/number_judge.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/college/C++/Proj/CS205project2BetterCalculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/number_judge.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/number_judge.o -MF CMakeFiles/main.dir/src/number_judge.o.d -o CMakeFiles/main.dir/src/number_judge.o -c /mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/number_judge.cpp
+CMakeFiles/main.dir/src/trie.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/trie.o: src/trie.cpp
+CMakeFiles/main.dir/src/trie.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/trie.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/trie.o -MF CMakeFiles/main.dir/src/trie.o.d -o CMakeFiles/main.dir/src/trie.o -c /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/trie.cpp
 
-CMakeFiles/main.dir/src/number_judge.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/number_judge.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/number_judge.cpp > CMakeFiles/main.dir/src/number_judge.i
+CMakeFiles/main.dir/src/trie.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/trie.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/trie.cpp > CMakeFiles/main.dir/src/trie.i
 
-CMakeFiles/main.dir/src/number_judge.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/number_judge.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/number_judge.cpp -o CMakeFiles/main.dir/src/number_judge.s
+CMakeFiles/main.dir/src/trie.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/trie.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/trie.cpp -o CMakeFiles/main.dir/src/trie.s
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/src/calc.o" \
 "CMakeFiles/main.dir/src/main.o" \
 "CMakeFiles/main.dir/src/number.o" \
-"CMakeFiles/main.dir/src/number_judge.o"
+"CMakeFiles/main.dir/src/trie.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+main: CMakeFiles/main.dir/src/calc.o
 main: CMakeFiles/main.dir/src/main.o
 main: CMakeFiles/main.dir/src/number.o
-main: CMakeFiles/main.dir/src/number_judge.o
+main: CMakeFiles/main.dir/src/trie.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/college/C++/Proj/CS205project2BetterCalculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +153,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /mnt/d/college/C++/Proj/CS205project2BetterCalculator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/d/college/C++/Proj/CS205project2BetterCalculator /mnt/d/college/C++/Proj/CS205project2BetterCalculator /mnt/d/college/C++/Proj/CS205project2BetterCalculator /mnt/d/college/C++/Proj/CS205project2BetterCalculator /mnt/d/college/C++/Proj/CS205project2BetterCalculator/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

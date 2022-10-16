@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/main.cpp" "CMakeFiles/main.dir/src/main.o" "gcc" "CMakeFiles/main.dir/src/main.o.d"
-  "/mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/number.cpp" "CMakeFiles/main.dir/src/number.o" "gcc" "CMakeFiles/main.dir/src/number.o.d"
-  "/mnt/d/college/C++/Proj/CS205project2BetterCalculator/src/number_judge.cpp" "CMakeFiles/main.dir/src/number_judge.o" "gcc" "CMakeFiles/main.dir/src/number_judge.o.d"
+  "/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/calc.cpp" "CMakeFiles/main.dir/src/calc.o" "gcc" "CMakeFiles/main.dir/src/calc.o.d"
+  "/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/main.cpp" "CMakeFiles/main.dir/src/main.o" "gcc" "CMakeFiles/main.dir/src/main.o.d"
+  "/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/number.cpp" "CMakeFiles/main.dir/src/number.o" "gcc" "CMakeFiles/main.dir/src/number.o.d"
+  "/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/src/trie.cpp" "CMakeFiles/main.dir/src/trie.o" "gcc" "CMakeFiles/main.dir/src/trie.o.d"
   )
 
 # Targets to which this target links.

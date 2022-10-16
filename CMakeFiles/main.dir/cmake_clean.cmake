@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/src/calc.o"
+  "CMakeFiles/main.dir/src/calc.o.d"
   "CMakeFiles/main.dir/src/main.o"
   "CMakeFiles/main.dir/src/main.o.d"
   "CMakeFiles/main.dir/src/number.o"
   "CMakeFiles/main.dir/src/number.o.d"
-  "CMakeFiles/main.dir/src/number_judge.o"
-  "CMakeFiles/main.dir/src/number_judge.o.d"
+  "CMakeFiles/main.dir/src/trie.o"
+  "CMakeFiles/main.dir/src/trie.o.d"
   "main"
   "main.pdb"
 )

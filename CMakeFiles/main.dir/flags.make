@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/d/college/C++/Proj/CS205project2BetterCalculator/./inc
+CXX_INCLUDES = -I/mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/./inc
 
 CXX_FLAGS = 
 

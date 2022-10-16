@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/college/C++/Proj/CS205project2BetterCalculator
+CMAKE_SOURCE_DIR = /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/college/C++/Proj/CS205project2BetterCalculator
+CMAKE_BINARY_DIR = /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/college/C++/Proj/CS205project2BetterCalculator/CMakeFiles /mnt/d/college/C++/Proj/CS205project2BetterCalculator//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/CMakeFiles /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/college/C++/Proj/CS205project2BetterCalculator/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/college/C++/Proj/project2BetterCalculator/CS205project2BetterCalculator/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,6 +130,21 @@ main/fast:
 .PHONY : main/fast
 
 # target to build an object file
+src/calc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/calc.o
+.PHONY : src/calc.o
+
+# target to preprocess a source file
+src/calc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/calc.i
+.PHONY : src/calc.i
+
+# target to generate assembly for a file
+src/calc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/calc.s
+.PHONY : src/calc.s
+
+# target to build an object file
 src/main.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.o
 .PHONY : src/main.o
@@ -160,19 +175,19 @@ src/number.s:
 .PHONY : src/number.s
 
 # target to build an object file
-src/number_judge.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/number_judge.o
-.PHONY : src/number_judge.o
+src/trie.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/trie.o
+.PHONY : src/trie.o
 
 # target to preprocess a source file
-src/number_judge.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/number_judge.i
-.PHONY : src/number_judge.i
+src/trie.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/trie.i
+.PHONY : src/trie.i
 
 # target to generate assembly for a file
-src/number_judge.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/number_judge.s
-.PHONY : src/number_judge.s
+src/trie.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/trie.s
+.PHONY : src/trie.s
 
 # Help Target
 help:
@@ -183,15 +198,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/calc.o"
+	@echo "... src/calc.i"
+	@echo "... src/calc.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/number.o"
 	@echo "... src/number.i"
 	@echo "... src/number.s"
-	@echo "... src/number_judge.o"
-	@echo "... src/number_judge.i"
-	@echo "... src/number_judge.s"
+	@echo "... src/trie.o"
+	@echo "... src/trie.i"
+	@echo "... src/trie.s"
 .PHONY : help
 
 

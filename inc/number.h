@@ -28,16 +28,15 @@ public:
 
 	Number();
 	Number(const int &x);
-	Number(const int &x,const int &scale);
-	Number(const long long &x,const int &scale);
-	Number(const double &x,const int &scale);
-	Number(const string &x,const int &scale);
+	Number(const int &x,const int scale);
+	Number(const long long &x,const int scale);
+	Number(const double &x,const int scale);
+	Number(const string x,const int scale);
 
 	void ToBig(int x);
 	void ToBig(long long x);
 	void ToBig(double x);
 	void ToBig(string x);
-	string Attribute();
 	void SetScale(const int &scale);
 
 	friend ostream& operator<<(ostream& output,const Number &obj);
